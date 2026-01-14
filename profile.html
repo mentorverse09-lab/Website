@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse | Edit Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#0f0d0c;
+  border-bottom:1px solid #2a2623;
+}
+nav h2{
+  font-size:24px;
+  color:#f3c97a;
+}
+nav .links a{
+  margin-left:26px;
+  text-decoration:none;
+  color:#e6e6e6;
+}
+nav .links a:hover{
+  color:#f3c97a;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:90px 20px 30px;
+}
+.header small{
+  color:#f3c97a;
+  letter-spacing:2px;
+  font-size:14px;
+}
+.header h1{
+  font-size:48px;
+  margin-top:10px;
+  font-weight:800;
+}
+
+/* FORM */
+.container{
+  max-width:720px;
+  margin:0 auto;
+  padding:30px 20px 100px;
+}
+form{
+  background:#171514;
+  padding:30px;
+  border-radius:20px;
+  border:1px solid #2a2623;
+}
+form h3{
+  text-align:center;
+  color:#f3c97a;
+  margin-bottom:20px;
+}
+input, select{
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  border:none;
+  border-radius:12px;
+  background:#12100f;
+  color:white;
+  font-size:15px;
+}
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  background:#f3c97a;
+  color:#000;
+  font-size:16px;
+  border-radius:20px;
+  font-weight:700;
+  cursor:pointer;
+}
+button:hover{opacity:0.9;}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#9f978c;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MentorVerse</h2>
+  <div class="links">
+    <a href="dashboard.html?reload=true">Dashboard</a>
+     <a href="profile.html">Profile</a>
+    <a href="contact us.html">contact us</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <small>UPDATE PROFILE</small>
+  <h1>Edit Your Details</h1>
+</section>
+
+<!-- FORM -->
+<div class="container">
+  <form id="profileForm">
+    <h3>Profile Information</h3>
+
+    <!-- BASIC DETAILS -->
+    <input id="fullName" type="text" placeholder="Full Name" required>
+    <input id="email" type="email" placeholder="Email Address" disabled>
+
+    <!-- EDUCATION -->
+    <input id="college" type="text" placeholder="College Name">
+
+    <select id="branch">
+      <option value="">Select Branch</option>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>EEE</option>
+      <option>IT</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+      <option>AI & ML</option>
+      <option>Data Science</option>
+      <option>Others</option>
+    </select>
+
+    <select id="year">
+      <option value="">Select Year</option>
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option>Passed Out</option>
+    </select>
+
+    <button type="submit">Save Changes</button>
+  </form>
+</div>
+
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+<!-- JS -->
+<script src="global.js"></script>
+<script src="profile.js"></script>
+
+</body>
+</html>

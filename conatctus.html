@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MentorVerse | Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#141110,#0b0a09);
+      color:white;
+    }
+
+    /* NAVBAR */
+    nav{
+      width:100%;
+      padding:22px 50px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      background:rgba(10,10,10,0.85);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+
+    nav h2{
+      font-size:24px;
+      font-weight:700;
+      color:#f3c97a;
+    }
+
+    nav .links a{
+      margin-left:26px;
+      text-decoration:none;
+      color:#e6e6e6;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    nav .links a:hover{
+      color:#f3c97a;
+    }
+
+    /* HERO */
+    .header{
+      text-align:center;
+      padding:100px 20px 40px;
+    }
+
+    .header small{
+      color:#f3c97a;
+      font-size:14px;
+      letter-spacing:2px;
+    }
+
+    .header h1{
+      font-size:54px;
+      margin-top:10px;
+      font-weight:800;
+    }
+
+    /* CONTACT SECTION */
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      padding:40px 20px 100px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+      gap:40px;
+    }
+
+    /* INFO BOX */
+    .info-box{
+      background:#171514;
+      padding:30px;
+      border-radius:20px;
+      border:1px solid #2a2623;
+    }
+
+    .info-box h3{
+      font-size:22px;
+      margin-bottom:12px;
+      color:#f3c97a;
+    }
+
+    .info-box p{
+      color:#d4cec7;
+      line-height:1.7;
+      margin-bottom:8px;
+    }
+
+    .info-box a{
+      color:#f3c97a;
+      text-decoration:none;
+    }
+
+    .socials{
+      margin-top:18px;
+      display:flex;
+      gap:14px;
+    }
+
+    .socials i{
+      font-size:24px;
+      color:#f3c97a;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .socials i:hover{
+      color:white;
+    }
+
+    /* FORM */
+    form{
+      background:#171514;
+      padding:30px;
+      border-radius:20px;
+      border:1px solid #2a2623;
+    }
+
+    form h3{
+      color:#f3c97a;
+      font-size:22px;
+      margin-bottom:18px;
+    }
+
+    input, textarea{
+      width:100%;
+      padding:12px;
+      margin-bottom:14px;
+      border:none;
+      border-radius:12px;
+      background:#12100f;
+      color:white;
+      font-size:15px;
+    }
+
+    textarea{
+      height:130px;
+      resize:none;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      background:#f3c97a;
+      color:#000;
+      font-size:16px;
+      border-radius:20px;
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    button:hover{
+      opacity:0.9;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#9f978c;
+      font-size:14px;
+      margin-top:80px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MentorVerse</h2>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="Learninghub.html">Learning Hub</a>
+    <a href="courses.html">Courses</a>
+    <a href="internship.html">Internship</a>
+    <a href="webinar.html">Webinar</a>
+    <a href="about.html">About</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <small>GET IN TOUCH</small>
+  <h1>Contact Us</h1>
+</section>
+
+<!-- CONTACT AREA -->
+<div class="container">
+
+  <!-- INFO -->
+  <div class="info-box">
+    <h3>Reach Out Anytime</h3>
+
+    <p>📧 Email 1:<br>
+      <a href="mailto:admin@mentorverse.co.in">admin@mentorverse.co.in</a>
+    </p>
+
+    <p>📧 Email 2:<br>
+      <a href="mailto:mentorverse09@gmail.com">mentorverse09@gmail.com</a>
+    </p>
+
+    <div class="socials">
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <form>
+    <h3>Send a Message</h3>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+<script src="global.js"></script>
+</body>
+</html>

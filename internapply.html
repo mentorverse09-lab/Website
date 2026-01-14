@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse | Internship Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(10,10,10,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav h2{
+  font-size:24px;
+  font-weight:700;
+  color:#f3c97a;
+}
+
+nav .links a{
+  margin-left:26px;
+  text-decoration:none;
+  color:#e6e6e6;
+  font-size:15px;
+  transition:0.3s;
+}
+nav .links a:hover{
+  color:#f3c97a;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:100px 20px 40px;
+}
+
+.header small{
+  color:#f3c97a;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.header h1{
+  font-size:54px;
+  margin-top:10px;
+  font-weight:800;
+}
+
+.header p{
+  max-width:720px;
+  margin:10px auto;
+  color:#d6d0c8;
+  font-size:17px;
+  line-height:1.7;
+}
+
+/* FORM WRAPPER */
+.container{
+  max-width:700px;
+  margin:0 auto;
+  padding:40px 20px 100px;
+}
+
+form{
+  background:#171514;
+  padding:30px;
+  border-radius:20px;
+  border:1px solid #2a2623;
+}
+
+form h3{
+  text-align:center;
+  color:#f3c97a;
+  margin-bottom:20px;
+  font-size:24px;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:14px;
+  border:none;
+  border-radius:12px;
+  background:#12100f;
+  color:white;
+  font-size:15px;
+}
+
+textarea{
+  height:140px;
+}
+
+/* FILE INPUT STYLING */
+.file-input{
+  background:#12100f;
+  padding:12px;
+  border-radius:12px;
+  margin-bottom:14px;
+  cursor:pointer;
+  color:#d6d0c8;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  background:#f3c97a;
+  color:#000;
+  font-size:16px;
+  border-radius:20px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{
+  opacity:0.9;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#9f978c;
+  font-size:14px;
+  margin-top:80px;
+}
+</style>
+<script src="global.js"></script>
+</head>
+
+
+</body>
+
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MentorVerse</h2>
+
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="internship.html">Internship</a>
+    <a href="about.html">About</a>
+    <a href="contactus.html">contact us</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <small>APPLY NOW</small>
+  <h1>Internship Application</h1>
+  <p>Fill the form below to apply for the internship. Our team will reach out after reviewing your details.</p>
+</section>
+
+<!-- FORM -->
+<div class="container">
+  <form>
+    <h3>Application Form</h3>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Mobile Number" required>
+    <input type="text" placeholder="College Name" required>
+
+    <select required>
+      <option value="">Select Branch</option>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>EEE</option>
+      <option>IT</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+      <option>AI & ML</option>
+      <option>Data Science</option>
+      <option>Others</option>
+    </select>
+
+    <select required>
+      <option value="">Select Year</option>
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option>Passed Out</option>
+    </select>
+
+    <div class="file-input">
+      Upload Resume (PDF)
+      <input type="file" accept=".pdf" style="margin-top:10px;">
+    </div>
+
+    <textarea placeholder="Why do you want this internship?" required></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+</body>
+</html>

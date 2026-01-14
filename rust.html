@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rust | MentorVerse Learning Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#0b0b0b;
+  color:white;
+  font-family:'Poppins',sans-serif;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(10,10,10,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+nav h2{
+  color:#f3c97a;
+  font-size:24px;
+  font-weight:700;
+}
+nav .links a{
+  margin-left:26px;
+  color:#e6e6e6;
+  text-decoration:none;
+  font-size:15px;
+}
+nav .links a:hover{color:#f3c97a;}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:100px 20px 40px;
+}
+.header small{
+  color:#f3c97a;
+  letter-spacing:2px;
+}
+.header h1{
+  font-size:54px;
+  margin-top:10px;
+  font-weight:800;
+}
+.header p{
+  max-width:720px;
+  margin:10px auto;
+  color:#d0ccc8;
+  line-height:1.7;
+}
+
+/* CONTENT */
+.section{
+  max-width:1100px;
+  margin:0 auto;
+  padding:40px 20px;
+}
+.box{
+  background:#171514;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #2a2623;
+  margin-bottom:35px;
+}
+.box h2{
+  font-size:26px;
+  color:#f3c97a;
+  margin-bottom:12px;
+}
+.box ul{
+  margin-left:18px;
+}
+.box li{
+  margin-bottom:8px;
+  color:#d6d0c8;
+}
+.box a{
+  color:#f3c97a;
+  text-decoration:none;
+}
+.box a:hover{color:white;}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  margin-top:80px;
+  color:#9f978c;
+}
+</style>
+
+<script src="global.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MentorVerse</h2>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="Learninghub.html">Learning Hub</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <small>SYSTEMS PROGRAMMING</small>
+  <h1>Rust</h1>
+  <p>
+    Learn Rust with curated videos, books, certifications, mindmaps,
+    and industry-grade developer blogs.
+  </p>
+</section>
+
+<!-- CONTENT -->
+<div class="section">
+
+<!-- OVERVIEW -->
+<div class="box">
+  <h2>📌 Overview</h2>
+  <p>
+    Rust is a modern, memory-safe, extremely fast systems programming language.
+    It eliminates null pointers and data races at compile time.
+    Rust is widely used in OS development, blockchain, cloud infrastructure,
+    WebAssembly, game engines, and performance-critical software.
+  </p>
+</div>
+
+<!-- YOUTUBE -->
+<div class="box">
+  <h2>🎥 Top 10 YouTube Videos</h2>
+  <ul>
+    <li><a href="https://youtu.be/BpPEoZW5IiY" target="_blank">Rust Full Course – freeCodeCamp</a></li>
+    <li><a href="https://youtu.be/ygL_xcavzQ4" target="_blank">Rust in 100 Seconds – Fireship</a></li>
+    <li><a href="https://youtu.be/Kp4Mvapo5kc" target="_blank">Rust Crash Course – Traversy Media</a></li>
+    <li><a href="https://youtu.be/oxc8db2kI3E" target="_blank">Rust for Beginners – Chris Biscardi</a></li>
+    <li><a href="https://youtu.be/gG3pytAY2MY" target="_blank">Ownership & Borrowing Explained</a></li>
+    <li><a href="https://youtu.be/ZM7w5lNvK9E" target="_blank">Rust Concurrency Explained</a></li>
+    <li><a href="https://youtu.be/Cjw6nFKSN-w" target="_blank">Rust for C/C++ Developers</a></li>
+    <li><a href="https://youtu.be/_eR-3EwR2nQ" target="_blank">Rust + WebAssembly</a></li>
+    <li><a href="https://youtu.be/EhT2mc03iIc" target="_blank">Build REST API in Rust</a></li>
+    <li><a href="https://youtu.be/iVYWDIW71jk" target="_blank">Smart Pointers in Rust</a></li>
+  </ul>
+</div>
+
+<!-- BOOKS -->
+<div class="box">
+  <h2>📚 Top Books (Archive.org)</h2>
+  <ul>
+    <li><a href="https://archive.org/details/the-rust-programming-language" target="_blank">The Rust Programming Language (Official)</a></li>
+    <li><a href="https://archive.org/details/programming-rust" target="_blank">Programming Rust – O’Reilly</a></li>
+    <li><a href="https://archive.org/details/rust-for-rustaceans" target="_blank">Rust for Rustaceans</a></li>
+    <li><a href="https://archive.org/details/rust-essentials" target="_blank">Rust Essentials – Packt</a></li>
+  </ul>
+</div>
+
+<!-- FREE CERTS -->
+<div class="box">
+  <h2>🟢 Free Certifications</h2>
+  <ul>
+    <li><a href="https://www.rust-lang.org/learn" target="_blank">Rust Official Learning Path</a></li>
+    <li><a href="https://learning.edx.org/course/course-v1:Microsoft+DEV232x+1T2019" target="_blank">edX Rust – Free Audit</a></li>
+    <li><a href="https://www.udemy.com/course/rust-fundamentals/" target="_blank">Udemy Rust Basics (Free)</a></li>
+    <li><a href="https://www.coursera.org/learn/rust-basics" target="_blank">Coursera Rust – Audit Free</a></li>
+    <li><a href="https://www.youtube.com/results?search_query=rust+tutorial" target="_blank">Rust Free Tutorials (YouTube)</a></li>
+  </ul>
+</div>
+
+<!-- PAID CERTS -->
+<div class="box">
+  <h2>🔵 Paid Certifications</h2>
+  <ul>
+    <li><a href="https://www.udemy.com/course/ultimate-rust-crash-course/" target="_blank">Udemy Ultimate Rust Course</a></li>
+    <li><a href="https://www.linkedin.com/learning/rust-essential-training" target="_blank">LinkedIn Rust Essential Training</a></li>
+    <li><a href="https://www.educative.io/courses/learn-rust-from-scratch" target="_blank">Educative Rust Developer Path</a></li>
+    <li><a href="https://www.udacity.com/course/data-engineering-nanodegree--nd027" target="_blank">Udacity Data Engineering (Rust Included)</a></li>
+  </ul>
+</div>
+
+<!-- MINDMAP -->
+<div class="box">
+  <h2>🧠 Mindmaps</h2>
+  <ul>
+    <li><a href="https://gitmind.com/rust-mindmap" target="_blank">Rust Mindmap – GitMind</a></li>
+    <li><a href="https://www.mindmeister.com/map/2456719336/rust-basics" target="_blank">Rust Learning Map – MindMeister</a></li>
+  </ul>
+</div>
+
+<!-- BLOGS -->
+<div class="box">
+  <h2>📰 Best Blogs</h2>
+  <ul>
+    <li><a href="https://doc.rust-lang.org/book/" target="_blank">Rust Official Book</a></li>
+    <li><a href="https://blog.rust-lang.org" target="_blank">Rust Official Blog</a></li>
+    <li><a href="https://fasterthanli.me" target="_blank">FasterThanLime</a></li>
+    <li><a href="https://www.geeksforgeeks.org/rust-programming-language/" target="_blank">GeeksForGeeks Rust</a></li>
+    <li><a href="https://rust-unofficial.github.io/" target="_blank">Rust Unofficial Guide</a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+</body>
+</html>

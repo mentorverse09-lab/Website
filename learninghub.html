@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse | Learning Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#141110,#0b0a09);
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(10,10,10,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav h2{
+  font-size:24px;
+  font-weight:700;
+  color:#f3c97a;
+}
+
+nav .links a{
+  margin-left:26px;
+  text-decoration:none;
+  color:#e6e6e6;
+  font-size:15px;
+  transition:0.3s;
+}
+
+nav .links a:hover{color:#f3c97a;}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:100px 20px 50px;
+}
+
+.header small{
+  color:#f3c97a;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.header h1{
+  font-size:54px;
+  margin:14px 0;
+  font-weight:800;
+}
+
+.header p{
+  max-width:720px;
+  margin:0 auto;
+  color:#d6d0c8;
+  font-size:17px;
+  line-height:1.7;
+}
+
+/* GRID */
+.grid{
+  max-width:1200px;
+  margin:40px auto 90px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:26px;
+  padding:20px;
+}
+
+.card{
+  background:#171514;
+  padding:26px;
+  border-radius:20px;
+  border:1px solid #2a2623;
+  transition:0.3s;
+  cursor:pointer;
+  box-shadow:0 18px 50px rgba(0,0,0,.5);
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#f3c97a;
+}
+
+.card h3{
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:8px;
+  color:#f3c97a;
+}
+
+.card p{
+  font-size:14px;
+  color:#d0ccc8;
+  line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit;}
+
+footer{
+  text-align:center;
+  padding:30px;
+  margin-top:60px;
+  color:#9f978c;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>MentorVerse</h2>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="learninghub.html">Learning Hub</a>
+    <a href="courses.html">Courses</a>
+    <a href="internship.html">Internship</a>
+    <a href="webinar.html">Webinar</a>
+    <a href="contactus.html">Contact us</a>
+  </div>
+</nav>
+
+<section class="header">
+  <small>LEARN • PRACTICE • MASTER</small>
+  <h1>Learning Hub</h1>
+  <p>
+    Explore beginner to advanced subjects across Computer Science & Engineering.
+    Each topic has a dedicated learning page with videos, books, certifications,
+    mindmaps, and industry blogs.
+  </p>
+</section>
+
+<div class="grid">
+
+  <a href="programming.html"><div class="card"><h3>Programming Fundamentals</h3><p>C, C++, Python, Java — syntax, logic building.</p></div></a>
+  <a href="dsa.html"><div class="card"><h3>Data Structures & Algorithms</h3><p>Arrays, trees, graphs, DP.</p></div></a>
+  <a href="ai.html"><div class="card"><h3>Artificial Intelligence</h3><p>NLP, agents, heuristics.</p></div></a>
+  <a href="ml.html"><div class="card"><h3>Machine Learning</h3><p>Regression, clustering.</p></div></a>
+  <a href="ds.html"><div class="card"><h3>Data Science</h3><p>Pandas, EDA, visualization.</p></div></a>
+  <a href="cloud.html"><div class="card"><h3>Cloud Computing</h3><p>AWS, Azure, GCP.</p></div></a>
+  <a href="devops.html"><div class="card"><h3>DevOps</h3><p>Docker, Kubernetes.</p></div></a>
+  <a href="fsd.html"><div class="card"><h3>Full Stack Development</h3><p>Frontend + Backend.</p></div></a>
+  <a href="cyber.html"><div class="card"><h3>Cybersecurity</h3><p>Ethical hacking basics.</p></div></a>
+  <a href="dbms.html"><div class="card"><h3>DBMS</h3><p>SQL, normalization.</p></div></a>
+  <a href="os.html"><div class="card"><h3>Operating Systems</h3><p>Processes, memory.</p></div></a>
+  <a href="comnetwork.html"><div class="card"><h3>Computer Networks</h3><p>TCP/IP, OSI model.</p></div></a>
+  <a href="automation.html"><div class="card"><h3>AI Tools & Automation</h3><p>ChatGPT, workflows.</p></div></a>
+  <a href="placement.html"><div class="card"><h3>Aptitude & Placement</h3><p>Interviews, reasoning.</p></div></a>
+
+</div>
+
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+<script src="global.js"></script>
+</body>
+</html>

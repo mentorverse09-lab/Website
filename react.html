@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>React.js | MentorVerse Learning Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#0b0b0b;
+  color:white;
+  font-family:'Poppins',sans-serif;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(10,10,10,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+nav h2{
+  color:#f3c97a;
+  font-size:24px;
+  font-weight:700;
+}
+nav .links a{
+  margin-left:26px;
+  color:#e6e6e6;
+  text-decoration:none;
+  font-size:15px;
+}
+nav .links a:hover{color:#f3c97a;}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:100px 20px 40px;
+}
+.header small{
+  color:#f3c97a;
+  letter-spacing:2px;
+}
+.header h1{
+  font-size:54px;
+  margin-top:10px;
+  font-weight:800;
+}
+.header p{
+  max-width:720px;
+  margin:10px auto;
+  color:#d0ccc8;
+  line-height:1.7;
+}
+
+/* CONTENT */
+.section{
+  max-width:1100px;
+  margin:0 auto;
+  padding:40px 20px;
+}
+.box{
+  background:#171514;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #2a2623;
+  margin-bottom:35px;
+}
+.box h2{
+  font-size:26px;
+  color:#f3c97a;
+  margin-bottom:12px;
+}
+.box ul{
+  margin-left:18px;
+}
+.box li{
+  margin-bottom:8px;
+  color:#d6d0c8;
+}
+.box a{
+  color:#f3c97a;
+  text-decoration:none;
+}
+.box a:hover{color:white;}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  margin-top:80px;
+  color:#9f978c;
+}
+</style>
+
+<script src="global.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MentorVerse</h2>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="Learninghub.html">Learning Hub</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <small>FRONTEND FRAMEWORK</small>
+  <h1>React.js</h1>
+  <p>
+    Master React.js with curated videos, books, certifications, mindmaps,
+    and industry-grade developer blogs.
+  </p>
+</section>
+
+<!-- CONTENT -->
+<div class="section">
+
+<!-- OVERVIEW -->
+<div class="box">
+  <h2>📌 Overview</h2>
+  <p>
+    React.js is a JavaScript library developed by Meta for building fast,
+    scalable, and component-based user interfaces.
+    It powers modern web apps like Facebook, Instagram, Netflix, Airbnb,
+    and thousands of startups.
+  </p>
+</div>
+
+<!-- YOUTUBE -->
+<div class="box">
+  <h2>🎥 Top 10 YouTube Videos</h2>
+  <ul>
+    <li><a href="https://youtu.be/bMknfKXIFA8" target="_blank">React Full Course – freeCodeCamp</a></li>
+    <li><a href="https://youtu.be/Ke90Tje7VS0" target="_blank">React Crash Course – Mosh</a></li>
+    <li><a href="https://youtu.be/SqcY0GlETPk" target="_blank">React Crash Course – Traversy Media</a></li>
+    <li><a href="https://youtu.be/Law7wfdg_ls" target="_blank">React for Beginners – CodeWithHarry</a></li>
+    <li><a href="https://youtu.be/Tn6-PIqc4UM" target="_blank">React Tutorial – Dave Gray</a></li>
+    <li><a href="https://youtu.be/5ZdHfJVAY-s" target="_blank">React Hooks – freeCodeCamp</a></li>
+    <li><a href="https://youtu.be/ruhHkVhB6p8" target="_blank">React Router v6 – Net Ninja</a></li>
+    <li><a href="https://youtu.be/j942wKiXFu8" target="_blank">Context API – PedroTech</a></li>
+    <li><a href="https://youtu.be/0riHps91AzE" target="_blank">React Project – Lama Dev</a></li>
+    <li><a href="https://youtu.be/WpvGqX-TXP0" target="_blank">React + Firebase</a></li>
+  </ul>
+</div>
+
+<!-- BOOKS -->
+<div class="box">
+  <h2>📚 Top Books (Archive.org)</h2>
+  <ul>
+    <li><a href="https://archive.org/details/learning-react-hooks" target="_blank">Learning React – O’Reilly</a></li>
+    <li><a href="https://archive.org/details/fullstack-react" target="_blank">Fullstack React</a></li>
+    <li><a href="https://archive.org/details/react-quickly" target="_blank">React Quickly – Manning</a></li>
+    <li><a href="https://archive.org/details/building-react-applications" target="_blank">Building React Applications</a></li>
+  </ul>
+</div>
+
+<!-- FREE CERTS -->
+<div class="box">
+  <h2>🟢 Free Certifications</h2>
+  <ul>
+    <li><a href="https://www.freecodecamp.org/learn/front-end-development-libraries/" target="_blank">freeCodeCamp React Certification</a></li>
+    <li><a href="https://scrimba.com/learn/learnreact" target="_blank">Scrimba React – Free</a></li>
+    <li><a href="https://www.codecademy.com/learn/react-101" target="_blank">Codecademy React Basics</a></li>
+    <li><a href="https://www.w3schools.com/react/" target="_blank">W3Schools React</a></li>
+    <li><a href="https://www.sololearn.com/en/learn/courses/react-introduction" target="_blank">Sololearn React</a></li>
+  </ul>
+</div>
+
+<!-- PAID CERTS -->
+<div class="box">
+  <h2>🔵 Paid Certifications</h2>
+  <ul>
+    <li><a href="https://www.coursera.org/specializations/meta-front-end-developer" target="_blank">Meta Front-End Developer</a></li>
+    <li><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">Udemy React – Maximilian</a></li>
+    <li><a href="https://www.udacity.com/course/react-nanodegree--nd019" target="_blank">Udacity React Nanodegree</a></li>
+    <li><a href="https://www.linkedin.com/learning/paths/become-a-react-developer" target="_blank">LinkedIn React Path</a></li>
+  </ul>
+</div>
+
+<!-- MINDMAP -->
+<div class="box">
+  <h2>🧠 Mindmaps</h2>
+  <ul>
+    <li><a href="https://gitmind.com/reactjs-mindmap" target="_blank">React Mindmap – GitMind</a></li>
+    <li><a href="https://www.mindmeister.com/map/2712272100/react-concepts" target="_blank">React Concepts – MindMeister</a></li>
+  </ul>
+</div>
+
+<!-- BLOGS -->
+<div class="box">
+  <h2>📰 Best Blogs</h2>
+  <ul>
+    <li><a href="https://react.dev/learn" target="_blank">React Official Docs</a></li>
+    <li><a href="https://blog.logrocket.com/tag/react/" target="_blank">LogRocket React Blog</a></li>
+    <li><a href="https://www.freecodecamp.org/news/tag/react/" target="_blank">freeCodeCamp React</a></li>
+    <li><a href="https://javascript.info/react" target="_blank">JavaScript.info React</a></li>
+    <li><a href="https://www.smashingmagazine.com/tag/react/" target="_blank">Smashing Magazine React</a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+</body>
+</html>

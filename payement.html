@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse | Free Access</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#141110,#0b0a09);
+  color:#fff;
+}
+
+/* WRAPPER */
+.wrapper{
+  width:100%;
+  min-height:100vh;
+  background:radial-gradient(circle at top,#2b2622,#0d0c0b);
+  padding:28px 36px;
+  display:flex;
+  flex-direction:column;
+}
+
+/* NAVBAR */
+.nav{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+}
+
+.nav-links a{
+  color:#d9d4cc;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.signup{
+  background:#f3c97a;
+  color:#000;
+  border:none;
+  padding:10px 22px;
+  border-radius:20px;
+  font-weight:500;
+  cursor:pointer;
+}
+
+/* CONTENT */
+.content{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* CARD */
+.card{
+  background:#171514;
+  border-radius:20px;
+  padding:36px;
+  max-width:420px;
+  width:100%;
+  border:1px solid #2a2623;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  text-align:center;
+}
+
+.card h1{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#d6d0c8;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+/* PRICE */
+.price{
+  margin-bottom:24px;
+}
+
+.price del{
+  color:#9f978c;
+  font-size:18px;
+  margin-right:8px;
+}
+
+.price span{
+  font-size:32px;
+  font-weight:600;
+  color:#f3c97a;
+}
+
+/* BUTTON */
+.btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:18px;
+  font-size:14px;
+  font-weight:500;
+  cursor:pointer;
+  background:#f3c97a;
+  color:#000;
+}
+
+/* INFO */
+.info{
+  margin-top:14px;
+  font-size:13px;
+  color:#cfc6bc;
+}
+
+/* RESPONSIVE */
+@media(max-width:480px){
+  .card{
+    margin:20px;
+  }
+}
+</style>
+<script src="global.js"></script>
+</head>
+
+
+
+</body>
+
+
+<div class="wrapper">
+
+  <!-- NAVBAR -->
+  <div class="nav">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="webinar.html">Webinar</a>
+      <button class="signup">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <div class="card">
+      <h1>Everything About Tech</h1>
+      <p>Live Webinar + Recording Access</p>
+
+      <div class="price">
+        <del>₹500</del>
+        <span>FREE</span>
+      </div>
+
+      <button class="btn">Register for Free</button>
+
+      <div class="info">
+        Limited seats · Free registration required
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

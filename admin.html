@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse | Admin Panel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+if (!localStorage.getItem("token")) {
+  window.location.href = "login.html";
+}
+</script>
+
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0b0b0b;
+  color:white;
+  display:flex;
+  min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:260px;
+  background:#141110;
+  border-right:1px solid #2a2623;
+  padding:30px 20px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+}
+
+.sidebar h2{
+  color:#f3c97a;
+  text-align:center;
+  margin-bottom:30px;
+  font-size:24px;
+}
+
+.sidebar a{
+  display:block;
+  padding:12px 15px;
+  margin-bottom:10px;
+  color:#e6e6e6;
+  font-size:15px;
+  text-decoration:none;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+  background:#f3c97a;
+  color:#000;
+}
+
+.logout{
+  margin-top:20px;
+  display:block;
+  text-align:center;
+  background:#f75c5c;
+  padding:12px;
+  color:white;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+}
+.logout:hover{
+  background:#ff3b3b;
+}
+
+/* MAIN CONTENT */
+.main{
+  margin-left:280px;
+  padding:40px;
+  width:100%;
+}
+
+h1{
+  font-size:36px;
+  color:#f3c97a;
+  margin-bottom:20px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#171514;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #2a2623;
+  box-shadow:0 15px 50px rgba(0,0,0,.4);
+}
+
+.card h3{
+  color:#f3c97a;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#d0ccc8;
+  margin-bottom:15px;
+}
+
+button{
+  padding:10px 20px;
+  background:#f3c97a;
+  border:none;
+  border-radius:12px;
+  font-weight:600;
+  color:#000;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{ opacity:0.9; }
+
+/* TABLE */
+.table-box{
+  background:#171514;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #2a2623;
+  margin-top:40px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
+th, td{
+  padding:12px;
+  border-bottom:1px solid #2a2623;
+  text-align:left;
+}
+
+th{
+  color:#f3c97a;
+  font-weight:600;
+}
+
+td{
+  color:#e6e6e6;
+}
+
+/* Footer */
+footer{
+  margin-top:40px;
+  text-align:center;
+  color:#8f8983;
+  padding:20px 0;
+  font-size:14px;
+}
+</style>
+<script src="global.js"></script>
+<p id="totalUsers">Loading...</p>
+
+</head>
+
+</body>
+
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>Admin Panel</h2>
+
+  <a href="#" class="active">Dashboard</a>
+  <a href="#">Add Courses</a>
+  <a href="#">Add internship</a>
+  <a href="#">Add Webinars</a>
+  <a href="#">View Users</a>
+  <a href="#">Applications</a>
+  <a href="#">Manage Certificates</a>
+  <a href="#">Notifications</a>
+  
+  <a href="login.html" class="logout">Logout</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+  
+  <h1>Welcome, Admin</h1>
+
+  <!-- TOP CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Users</h3>
+      <p>234 Registered Students</p>
+      <button>View Users</button>
+    </div>
+
+    <div class="card">
+      <h3>Courses</h3>
+      <p>12 Courses Available</p>
+      <button>Add Course</button>
+    </div>
+
+    <div class="card">
+      <h3>Internship Applications</h3>
+      <p>43 New Applications</p>
+      <button>View Applications</button>
+    </div>
+
+    <div class="card">
+      <h3>Webinar Registrations</h3>
+      <p>78 Registered</p>
+      <button>Manage Webinars</button>
+    </div>
+  </div>
+
+  <!-- USERS TABLE -->
+  <div class="table-box">
+    <h3 style="color:#f3c97a;">Recent Users</h3>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>Student 1</td>
+        <td>student1@example.com</td>
+        <td>Python</td>
+        <td>Active</td>
+      </tr>
+
+      <tr>
+        <td>Student 2</td>
+        <td>student2@example.com</td>
+        <td>Web Dev</td>
+        <td>Pending</td>
+      </tr>
+
+      <tr>
+        <td>Student 3</td>
+        <td>student3@example.com</td>
+        <td>AI/ML</td>
+        <td>Active</td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+    © 2025 MentorVerse · Admin Panel
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0a0a0a;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(10,10,10,0.8);
+  backdrop-filter:blur(8px);
+  z-index:10;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav .logo-area{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+nav .logo-area img{
+  width:55px;
+  height:auto;
+}
+
+nav .logo-area h2{
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:white;
+}
+
+nav .links a{
+  margin-left:26px;
+  text-decoration:none;
+  color:#e6e6e6;
+  font-size:15px;
+  font-weight:400;
+  transition:0.3s;
+}
+
+nav .links a:hover{
+  color:#f3c97a;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 30px;
+  background:radial-gradient(circle at top,#1b1b1b,#000);
+}
+
+.hero img{
+  width:180px;
+  height:auto;
+  margin-bottom:22px;
+  filter:drop-shadow(0 0 20px rgba(243,201,122,0.5));
+}
+
+.hero small{
+  color:#f3c97a;
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:3px;
+}
+
+.hero h1{
+  font-size:70px;
+  font-weight:900;
+  letter-spacing:2px;
+  margin-top:10px;
+  text-shadow:0 0 35px rgba(243,201,122,0.4);
+}
+
+.hero h2{
+  font-size:26px;
+  font-weight:400;
+  color:#d6d0c8;
+  margin-top:10px;
+}
+
+.hero button{
+  margin-top:35px;
+  padding:14px 38px;
+  background:#f3c97a;
+  color:#000;
+  font-size:16px;
+  font-weight:600;
+  border:none;
+  border-radius:28px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.hero button:hover{
+  transform:scale(1.04);
+}
+
+/* FEATURES SECTION */
+.section{
+  padding:100px 50px;
+  background:#0d0d0d;
+}
+
+.section h3{
+  font-size:36px;
+  margin-bottom:20px;
+  text-align:center;
+  font-weight:700;
+}
+
+.section p{
+  max-width:800px;
+  margin:0 auto;
+  text-align:center;
+  font-size:17px;
+  line-height:1.8;
+  color:#d0ccc8;
+}
+
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  background:#000;
+  color:#999;
+  font-size:14px;
+  margin-top:80px;
+}
+</style>
+<script src="global.js"></script>
+</head>
+
+</body>
+
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="MentorVerse Logo">
+    <h2>MentorVerse</h2>
+  </div>
+
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="learninghub.html">Learning Hub</a>
+    <a href="courses.html">Courses</a>
+    <a href="internship.html">Internship</a>
+    <a href="webinar.html">Webinar</a>
+    <a href="conatctus.html">contact us</a>
+    <a href="login.html" style="background:#f3c97a;padding:6px 16px;border-radius:16px;color:#000;">Login</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/logo.png" alt="MentorVerse Logo">
+
+  <small>YOUR PARTNER IN GROWTH</small>
+  <h1>MENTORVERSE</h1>
+  <h2>Learn · Build · Grow</h2>
+
+  <button>Get Started</button>
+</section>
+
+<!-- SECTION -->
+<section class="section">
+  <h3>Why Choose MentorVerse?</h3>
+  <p>
+    MentorVerse brings together knowledge, experience, and real-world guidance.
+    Learn through structured courses, gain hands-on exposure through internship,
+    attend webinars, and grow with mentorship designed for your success.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+</body>
+</html>

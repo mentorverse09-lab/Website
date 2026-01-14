@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MentorVerse | Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:22px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(10,10,10,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+nav h2{
+  font-size:24px;
+  font-weight:700;
+  color:#f3c97a;
+}
+nav .links a{
+  margin-left:26px;
+  text-decoration:none;
+  color:#e6e6e6;
+  font-size:15px;
+}
+nav .links a:hover{color:#f3c97a;}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:100px 20px 40px;
+}
+.header small{
+  color:#f3c97a;
+  letter-spacing:2px;
+  font-size:14px;
+}
+.header h1{
+  font-size:52px;
+  margin-top:10px;
+  font-weight:800;
+}
+
+/* CONTAINER */
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:20px 20px 100px;
+}
+
+.section{
+  background:#171514;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #2a2623;
+  margin-bottom:25px;
+}
+.section h3{
+  color:#f3c97a;
+  font-size:20px;
+  margin-bottom:12px;
+}
+.section p{
+  color:#d4cec7;
+  font-size:15px;
+  margin-bottom:10px;
+}
+
+/* TOGGLES */
+.toggle-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:12px 0;
+}
+.toggle-box label{
+  font-size:15px;
+  color:#e6e6e6;
+}
+
+.toggle{
+  width:50px;
+  height:24px;
+  background:#333;
+  border-radius:22px;
+  position:relative;
+  cursor:pointer;
+}
+.toggle::after{
+  content:'';
+  width:22px;
+  height:22px;
+  background:#f3c97a;
+  border-radius:50%;
+  position:absolute;
+  top:1px;
+  left:1px;
+  transition:0.3s;
+}
+.toggle.active::after{
+  left:27px;
+}
+
+/* BUTTON */
+button{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  background:#f75c5c;
+  border:none;
+  color:white;
+  border-radius:12px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{background:#ff3939;}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#9f978c;
+  font-size:14px;
+  margin-top:80px;
+}
+</style>
+
+<script>
+function toggleSwitch(id){
+  document.getElementById(id).classList.toggle("active");
+}
+</script>
+<script src="global.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MentorVerse</h2>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <small>SETTINGS</small>
+  <h1>Manage Your Account</h1>
+</section>
+
+<!-- SETTINGS -->
+<div class="container">
+
+  <!-- ACCOUNT -->
+  <div class="section">
+    <h3>Account Settings</h3>
+    <p>Manage your login, email, and security preferences.</p>
+
+    <div class="toggle-box">
+      <label>Two-Step Verification</label>
+      <div class="toggle" id="t1" onclick="toggleSwitch('t1')"></div>
+    </div>
+
+    <div class="toggle-box">
+      <label>Login Alerts</label>
+      <div class="toggle" id="t2" onclick="toggleSwitch('t2')"></div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATIONS -->
+  <div class="section">
+    <h3>Notification Settings</h3>
+    <p>Control updates and alerts.</p>
+
+    <div class="toggle-box">
+      <label>Webinar Notifications</label>
+      <div class="toggle" id="t3" onclick="toggleSwitch('t3')"></div>
+    </div>
+
+    <div class="toggle-box">
+      <label>Internship Alerts</label>
+      <div class="toggle" id="t4" onclick="toggleSwitch('t4')"></div>
+    </div>
+
+    <div class="toggle-box">
+      <label>Course Updates</label>
+      <div class="toggle" id="t5" onclick="toggleSwitch('t5')"></div>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="section">
+    <h3>Privacy Settings</h3>
+    <p>Manage profile visibility.</p>
+
+    <div class="toggle-box">
+      <label>Public Profile</label>
+      <div class="toggle" id="t6" onclick="toggleSwitch('t6')"></div>
+    </div>
+
+    <div class="toggle-box">
+      <label>Certificate Verification</label>
+      <div class="toggle" id="t7" onclick="toggleSwitch('t7')"></div>
+    </div>
+  </div>
+
+  <!-- THEME -->
+  <div class="section">
+    <h3>Theme Appearance</h3>
+    <p>Choose your preferred theme.</p>
+
+    <div class="toggle-box">
+      <label>Dark Mode (Default)</label>
+      <div class="toggle active"></div>
+    </div>
+
+    <div class="toggle-box">
+      <label>Light Mode</label>
+      <div class="toggle" id="t8" onclick="toggleSwitch('t8')"></div>
+    </div>
+  </div>
+
+  <!-- DELETE -->
+  <div class="section">
+    <h3>Delete Account</h3>
+    <p>
+      Deleting your account is permanent. All certificates,
+      courses, and data will be removed.
+    </p>
+    <button>Delete My Account</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 MentorVerse · Learn · Build · Grow
+</footer>
+
+</body>
+</html>
